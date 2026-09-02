@@ -1,6 +1,6 @@
 # Dice Roller
 
-Dice Roller is a beginner-friendly terminal game that rolls one to six dice, displays them as colorful ASCII art, and keeps score statistics for the current session.
+Dice Roller is a beginner-friendly terminal program that automatically rolls two dice and displays them as colorful ASCII art.
 
 ## Features
 
@@ -8,11 +8,9 @@ Dice Roller is a beginner-friendly terminal game that rolls one to six dice, dis
 - Rich panels, tables, borders, colors, animation, and menu layout
 - Original ASCII dice faces displayed side-by-side
 - Short rolling animation before each result
-- Roll one to six dice and calculate the total
+- Automatically roll two dice and calculate the total
 - Lucky-roll, jackpot, and tough-luck messages
-- Session statistics: number of rolls, highest roll, lowest roll, total points, and average roll
-- Friendly handling of invalid input and `Ctrl+C`
-- Interactive options to roll, view statistics, roll again, or exit
+- No user input required
 
 ## Technologies/Libraries Used
 
@@ -53,7 +51,7 @@ On some systems, use `python3` instead of `python`.
 python dice.py
 ```
 
-To install dependencies and run the game in one step, use:
+The program displays the dice and exits automatically. To install dependencies and run it in one step, use:
 
 ```bash
 python run.py
@@ -101,8 +99,6 @@ Your Dice
 Total: 10
 A solid roll!
 ```
-
-After a roll, choose `2` to see the current session's statistics or `3` to roll again.
 
 ## Why Use `requirements.txt`?
 

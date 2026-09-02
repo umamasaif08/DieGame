@@ -155,25 +155,8 @@ def show_menu() -> str:
 
 
 def main() -> None:
-    """Run the interactive dice game until the player exits."""
-    rolls: list[int] = []
-    show_title()
-    try:
-        while True:
-            choice = show_menu()
-            if choice in {"1", "3"}:
-                number_of_dice = ask_for_dice()
-                if number_of_dice is not None:
-                    rolls.append(roll_dice(number_of_dice))
-            elif choice == "2":
-                show_statistics(rolls)
-            elif choice == "4" or choice.lower() in {"q", "quit", "exit"}:
-                break
-            else:
-                console.print("[bold red]That option is not available. Choose 1, 2, 3, or 4.[/bold red]")
-    except KeyboardInterrupt:
-        console.print("\n[bold yellow]Roll cancelled.[/bold yellow]")
-    console.print(Panel("Thanks for playing! See you next time.", border_style="bright_green", box=box.DOUBLE))
+    """Roll and display two dice without requiring user input."""
+    roll_dice(2)
 
 
 if __name__ == "__main__":
